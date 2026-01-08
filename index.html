@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Town of Bitcoin | Adrehn's Masterpiece</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --atmosphere-green: #32CD32;
+            --electric-blue: #00FFFF;
+            --neon-lava-yellow: #FFD700;
+            --boldly-found-yellow: #FFFF00;
+            --quiet-white: #F5F5F5;
+            --dark-matter-purple: #301934;
+            --blackout-black: #000000;
+            --binary-greyscale-blue: #5F9EA0;
+            --golf-course-green: #008000;
+        }
+
+        body {
+            background-color: var(--blackout-black);
+            color: var(--quiet-white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .neon-text {
+            text-shadow: 0 0 10px var(--electric-blue), 0 0 20px var(--atmosphere-green);
+        }
+
+        .lava-border {
+            border: 4px solid var(--neon-lava-yellow);
+            box-shadow: 0 0 15px var(--neon-lava-yellow);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--dark-matter-purple), var(--blackout-black));
+        }
+
+        .btn-action {
+            background-color: var(--atmosphere-green);
+            color: var(--blackout-black);
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-action:hover {
+            transform: scale(1.1) rotate(2deg);
+            background-color: var(--electric-blue);
+        }
+
+        .glitch {
+            animation: glitch 1s linear infinite;
+        }
+
+        @keyframes glitch {
+            2%, 64% { transform: translate(2px, 0) skew(0deg); }
+            4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+            62% { transform: translate(0, 0) skew(5deg); }
+        }
+
+        .scrolling-ticker {
+            white-space: nowrap;
+            overflow: hidden;
+            background: var(--binary-greyscale-blue);
+            padding: 10px 0;
+        }
+
+        .ticker-content {
+            display: inline-block;
+            animation: ticker 30s linear infinite;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .terminal-box {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid var(--atmosphere-green);
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="p-6 flex justify-between items-center border-b border-gray-800 sticky top-0 bg-black z-50">
+        <div class="text-3xl font-black neon-text italic">BTC TOWN</div>
+        <div class="space-x-8 hidden md:flex">
+            <a href="#" onclick="showPage('home')" class="hover:text-yellow-400 transition">The Town</a>
+            <a href="#" onclick="showPage('bank')" class="hover:text-blue-400 transition">Self-Care Bank</a>
+            <a href="#" onclick="showPage('thieves')" class="hover:text-green-400 transition">Wealth of Thieves</a>
+        </div>
+        <div class="text-xs text-right hidden sm:block">
+            <p>BTC PRICE:</p>
+            <p class="text-green-400 font-bold">$1,000,000 (Joke-Adjusted)</p>
+        </div>
+    </nav>
+
+    <!-- Ticker -->
+    <div class="scrolling-ticker border-y border-white">
+        <div class="ticker-content font-bold text-black">
+            URGENT: BANK EMPLOYEES CAUGHT STEALING AGAIN! • REDIRECT YOUR DEPOSITS NOW • SHORT OUT THE SKIMMERS • WELCOME TO THE SIDEWALK TO NOWHERE • ADREHN IS IN CONTROL • 
+            URGENT: BANK EMPLOYEES CAUGHT STEALING AGAIN! • REDIRECT YOUR DEPOSITS NOW • SHORT OUT THE SKIMMERS • WELCOME TO THE SIDEWALK TO NOWHERE • ADREHN IS IN CONTROL • 
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT AREA -->
+    <main id="content-area" class="container mx-auto px-4 py-12">
+        
+        <!-- PAGE: HOME (The Town) -->
+        <section id="page-home" class="space-y-12">
+            <div class="text-center">
+                <h1 class="text-6xl md:text-8xl font-black mb-4 glitch" style="color: var(--boldly-found-yellow);">
+                    THE TOWN OF BITCOIN
+                </h1>
+                <p class="text-2xl text-gray-400 italic">Where the sidewalks lead to nowhere, but the wallets lead to the moon.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-8 bg-gray-900 lava-border rounded-xl">
+                    <h2 class="text-3xl font-bold mb-4" style="color: var(--neon-lava-yellow);">The Sidewalk to Nowhere</h2>
+                    <p class="mb-4 leading-relaxed">
+                        In most towns, sidewalks lead to the grocery store or the park. In Bitcoin Town, the sidewalk is purely aesthetic. It represents the "Legacy System"—a path that looks solid but leads exactly to a dead end where a central banker is waiting to print more "I Owe You" notes. 
+                    </p>
+                    <div class="h-48 rounded bg-gradient-to-r from-gray-700 to-gray-800 flex items-center justify-center border-dashed border-2 border-gray-500">
+                        <span class="text-4xl">🚷</span>
+                    </div>
+                </div>
+
+                <div class="p-8 bg-gray-900 border-4 border-blue-500 rounded-xl">
+                    <h2 class="text-3xl font-bold mb-4" style="color: var(--electric-blue);">The Adrehn Protocol</h2>
+                    <p class="mb-4 text-xl font-serif italic">"Why worry about the charts when you can just manifest the pump?"</p>
+                    <div class="bg-black p-6 rounded text-center mb-6">
+                        <h3 class="text-5xl font-black text-white mb-2 uppercase">We will leave it all up to Adrehn</h3>
+                        <p class="text-xs text-gray-500">Official Decree #402-B</p>
+                    </div>
+                    <button class="w-full py-4 btn-action text-xl rounded-full" onclick="pumpBtc()">CLICK TO INCREASE BTC VALUE</button>
+                </div>
+            </div>
+
+            <div class="text-center py-20">
+                <h2 class="text-4xl font-bold mb-8">Are you tired of the "Normal" Banks?</h2>
+                <a href="https://www.google.com/search?q=Bank+employee+steals+from+bank+customer" target="_blank" class="text-2xl underline text-red-500 hover:text-red-300 transition animate-pulse">
+                    WATCH THEM STEAL: Click here to see Google results for "Bank employee steals from bank customer"
+                </a>
+            </div>
+        </section>
+
+        <!-- PAGE: BANK (Self-Care System) -->
+        <section id="page-bank" class="hidden space-y-8">
+            <div class="text-center">
+                <h2 class="text-5xl font-black mb-4" style="color: var(--atmosphere-green);">SELF-UTILIZED SELF-CARE BANK</h2>
+                <p class="text-xl">Traditional banks have guards. We have <strong>Joke Security.</strong></p>
+            </div>
+
+            <div class="max-w-2xl mx-auto terminal-box p-6 rounded shadow-2xl">
+                <div class="flex items-center space-x-2 mb-4">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    <span class="text-xs text-gray-500">BTC-OS v1.0 - ENCRYPTED SELF-OWNERSHIP</span>
+                </div>
+                <div id="terminal-text" class="text-sm space-y-2 mb-4">
+                    <p class="text-green-400">> System Booting...</p>
+                    <p class="text-blue-400">> Detecting Bank Employee Skimmers...</p>
+                    <p class="text-red-400">> Warning: Redirect Attempt Detected from "Legacy Bank Inc."</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <button onclick="bankAction('short')" class="p-3 bg-red-900 border border-red-500 text-xs hover:bg-red-700">SHORT OUT DEPOSIT</button>
+                    <button onclick="bankAction('redirect')" class="p-3 bg-blue-900 border border-blue-500 text-xs hover:bg-blue-700">REDIRECT SKIMMER</button>
+                    <button onclick="bankAction('joke')" class="p-3 bg-yellow-900 border border-yellow-500 text-xs hover:bg-yellow-700">INJECT PUNCHLINE</button>
+                    <button onclick="bankAction('encrypt')" class="p-3 bg-green-900 border border-green-500 text-xs hover:bg-green-700">ENCRYPT SELF-OWNERSHIP</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div class="p-4 bg-black border border-gray-700">
+                    <h4 class="font-bold text-green-500">Atmosphere Green</h4>
+                    <p class="text-xs">The color of your profit when you ignore the news.</p>
+                </div>
+                <div class="p-4 bg-black border border-gray-700">
+                    <h4 class="font-bold text-purple-500">Dark Matter Purple</h4>
+                    <p class="text-xs">Where the central bank keeps your "missing" funds.</p>
+                </div>
+                <div class="p-4 bg-black border border-gray-700">
+                    <h4 class="font-bold text-yellow-500">Lava Yellow</h4>
+                    <p class="text-xs">The heat of the hardware wallet under your bed.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE: THIEVES -->
+        <section id="page-thieves" class="hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-6xl font-black mb-4" style="color: var(--binary-greyscale-blue);">THE WEALTH SYSTEM OF THIEVES</h2>
+                <p class="text-xl">In the normal bank, employees steal from you. Here, we just laugh at them.</p>
+            </div>
+
+            <div class="bg-white text-black p-8 rounded-3xl transform rotate-1 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 text-9xl opacity-10">😂</div>
+                <h3 class="text-3xl font-black mb-6">How to Handle a Bank Skimmer:</h3>
+                <ul class="space-y-4 text-lg list-disc list-inside">
+                    <li><strong>Step 1:</strong> Identify the bank employee reaching into your pocket.</li>
+                    <li><strong>Step 2:</strong> Tell them a joke so funny they drop their "Service Fees."</li>
+                    <li><strong>Step 3:</strong> Convert that laughter into Sats.</li>
+                    <li><strong>Step 4:</strong> Upload the transaction to the <em>Golf Course Green</em> network.</li>
+                </ul>
+                <div class="mt-8 p-4 bg-green-100 border-l-8 border-green-600 italic">
+                    "If you can't trust a guy with a necktie to take 3% of your life's work, who can you trust?"
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-12 text-center border-t border-gray-800 bg-black">
+        <p class="text-sm text-gray-500">© The Town of Bitcoin - All rights reserved to the laughter.</p>
+        <p class="text-xl mt-4 neon-text">ADREHN IS WATCHING. STAY FUNNY.</p>
+        <div class="flex justify-center space-x-4 mt-6">
+            <div class="w-8 h-8 rounded-full" style="background-color: var(--atmosphere-green);"></div>
+            <div class="w-8 h-8 rounded-full" style="background-color: var(--electric-blue);"></div>
+            <div class="w-8 h-8 rounded-full" style="background-color: var(--neon-lava-yellow);"></div>
+            <div class="w-8 h-8 rounded-full" style="background-color: var(--dark-matter-purple);"></div>
+            <div class="w-8 h-8 rounded-full" style="background-color: var(--golf-course-green);"></div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById('page-' + pageId).classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
+
+        function pumpBtc() {
+            const colors = ['var(--atmosphere-green)', 'var(--electric-blue)', 'var(--neon-lava-yellow)', 'var(--boldly-found-yellow)'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+            
+            const msg = document.createElement('div');
+            msg.className = 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-9xl font-black z-50 pointer-events-none';
+            msg.style.color = 'white';
+            msg.innerText = 'HAHA! +$50k';
+            document.body.appendChild(msg);
+
+            setTimeout(() => {
+                document.body.style.backgroundColor = 'var(--blackout-black)';
+                msg.remove();
+            }, 500);
+        }
+
+        function bankAction(type) {
+            const terminal = document.getElementById('terminal-text');
+            let text = '';
+            
+            switch(type) {
+                case 'short':
+                    text = '<p class="text-yellow-400">> Short-circuiting deposit... Bank employee confused by your high-IQ joke.</p>';
+                    break;
+                case 'redirect':
+                    text = '<p class="text-purple-400">> Skimmer detected. Redirecting stolen funds to the "Adrehn Pizza Fund".</p>';
+                    break;
+                case 'joke':
+                    text = '<p class="text-pink-400">> Why did the banker cross the road? To tax the other side! (Hilarity ensues, security bypassed).</p>';
+                    break;
+                case 'encrypt':
+                    text = '<p class="text-white font-bold">> ENCRYPTION COMPLETE. Your Bitcoin is now as safe as a secret in a quiet town.</p>';
+                    break;
+            }
+            
+            terminal.innerHTML += text;
+            terminal.scrollTop = terminal.scrollHeight;
+        }
+
+        // Initialize with some terminal flavor
+        setInterval(() => {
+            if (!document.getElementById('page-bank').classList.contains('hidden')) {
+                const logs = [
+                    "> Monitoring greedy bank hands...",
+                    "> Sidewalk to nowhere status: Empty.",
+                    "> Adrehn constant: 100% stable.",
+                    "> Greyscale-blue waves normalized."
+                ];
+                const terminal = document.getElementById('terminal-text');
+                const log = logs[Math.floor(Math.random() * logs.length)];
+                terminal.innerHTML += `<p class="text-gray-500 text-xs">${log}</p>`;
+                if (terminal.childNodes.length > 20) terminal.removeChild(terminal.firstChild);
+            }
+        }, 3000);
+    </script>
+</body>
+</html>
